@@ -1,0 +1,18 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.28.0.12:8501
+  External URL: http://35.194.83.89:8501
+
+2023-12-05 16:00:00.836 Uncaught app exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
+    exec(code, module.__dict__)
+  File "/content/streamlit_app.py", line 7, in <module>
+    knn_loaded = joblib.load('knn_model.joblib')
+  File "/usr/local/lib/python3.10/dist-packages/joblib/numpy_pickle.py", line 650, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'knn_model.joblib'
